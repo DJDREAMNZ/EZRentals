@@ -118,7 +118,7 @@ $(".item").on("click", function () {
   SelectedName = $(".item.selected").data("name");
   FuelConsumptionRate = parseFloat($(".item.selected").data("fuel"));
   document.getElementById("name").innerHTML = SelectedName;
-  document.getElementById("price").innerHTML = TotalCost * DaysCount;
+  document.getElementById("price").innerHTML = "$"+TotalCost * DaysCount;
   document.getElementById("fuelcost").innerHTML = (FuelConsumptionRate * DistanceCount) / 100;
 });
 
