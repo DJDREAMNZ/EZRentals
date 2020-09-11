@@ -58,7 +58,7 @@ $(function () {
   $(".section2 .next").on("click", function () {
     validation();
     if (ValidateCheck == true) {
-      current++;
+      current += 1;
       tl.playTo(steps[current]);
     }
   });
@@ -114,7 +114,6 @@ $(".section2 .next").on("click", function () {
 $(".item").on("click", function () {
   $(".section-container .item").not(this).removeClass("selected");
   $(this).addClass("selected");
-  TotalCost = parseInt($(".item.selected").data("price"));
   SelectedName = $(".item.selected").data("name");
   FuelConsumptionRate = parseFloat($(".item.selected").data("fuel"));
   document.getElementById("name").innerHTML = SelectedName;
