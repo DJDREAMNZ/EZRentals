@@ -51,7 +51,7 @@ $(function () {
   var steps = [0, 20, 40, 60, 80, 100];
   var current = 0;
 
-  $(".section1 span").on("click", function () {
+  $(".section1 h2").on("click", function () {
     current = 1;
     tl.playTo(steps[current]);
   });
@@ -119,7 +119,7 @@ $(".item").on("click", function () {
   FuelConsumptionRate = parseFloat($(".item.selected").data("fuel"));
   document.getElementById("name").innerHTML = SelectedName;
   document.getElementById("price").innerHTML = "$"+TotalCost * DaysCount;
-  document.getElementById("fuelcost").innerHTML = (FuelConsumptionRate * DistanceCount) / 100;
+  document.getElementById("fuelconsumption").innerHTML = (FuelConsumptionRate * DistanceCount) / 100;
 });
 
 $(function () {
