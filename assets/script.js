@@ -114,6 +114,7 @@ $(".section2 .next").on("click", function () {
 $(".item").on("click", function () {
   $(".section-container .item").not(this).removeClass("selected");
   $(this).addClass("selected");
+  TotalCost = parseInt($(".item.selected").data("price"), 10);
   SelectedName = $(".item.selected").data("name");
   FuelConsumptionRate = parseFloat($(".item.selected").data("fuel"));
   document.getElementById("name").innerHTML = SelectedName;
