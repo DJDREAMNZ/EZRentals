@@ -22,7 +22,7 @@ body {
     font-size: 1em;
 }
 
-.container {
+.fuelcost {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -33,17 +33,6 @@ body {
 
 .carname {
     color: red;
-    font-size: 0.9em;
-}
-
-.carprice {
-    color: rgb(37, 142, 222);
-    font-size: 0.9em;
-}
-
-.fuelconsheader {
-    color: rgb(140, 0, 255);
-    font-size: 0.8em;
 }
 
 .section {
@@ -65,7 +54,7 @@ body {
 
 }
 
-.section:nth-child(odd) h2 {
+.section:nth-child(odd) span {
 
     font-size: 10vw;
     color: #ffffff;
@@ -140,10 +129,6 @@ body {
     margin-bottom: 1em;
 }
 
-.slide1 .slide-text-custom1 {
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
 
 .slide1 .content h1 {
     display: block;
@@ -201,8 +186,8 @@ body {
 }
 
 .selected {
-    background-color: rgba(138, 138, 138, 0.6);
-    border-radius: 0.5em;
+    background-color: rgb(191, 243, 255);
+    border-radius: 1em;
     color: black;
     font-size: 1.1em;
 
